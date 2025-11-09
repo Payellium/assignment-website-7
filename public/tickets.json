@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User unable to log into their account using correct credentials.",
+    "customer": "John Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-01T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed",
+    "description": "Payment not going through even with valid card details.",
+    "customer": "Emma Johnson",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-11-02T10:20:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Page Not Loading",
+    "description": "The dashboard page is stuck on loading screen.",
+    "customer": "Michael Brown",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-11-03T08:05:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Email Verification Issue",
+    "description": "Verification link sent via email is not working.",
+    "customer": "Sophia Miller",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-04T11:30:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Slow Website Performance",
+    "description": "The website takes too long to load on mobile devices.",
+    "customer": "Liam Wilson",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-11-05T13:45:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Password Reset Not Working",
+    "description": "Password reset link shows an error message.",
+    "customer": "Olivia Davis",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-06T07:50:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Order Confirmation Missing",
+    "description": "Customer did not receive order confirmation email after purchase.",
+    "customer": "Noah Anderson",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-11-07T09:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "App Crash on iOS",
+    "description": "App crashes immediately after launch on iPhone 13.",
+    "customer": "Ava Martinez",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-11-07T14:25:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Refund Not Received",
+    "description": "Customer requested refund 7 days ago but hasn't received it yet.",
+    "customer": "William Garcia",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-08T10:10:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Incorrect Invoice",
+    "description": "Invoice shows wrong billing amount for last purchase.",
+    "customer": "Isabella Thomas",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-11-08T12:40:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Feature Request - Dark Mode",
+    "description": "Customer requested dark mode support for the dashboard.",
+    "customer": "James Lee",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-11-08T15:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Notification Delay",
+    "description": "Push notifications are arriving late or not at all.",
+    "customer": "Mia Taylor",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-11-09T08:15:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Account Suspended",
+    "description": "Customer’s account was suspended without notice.",
+    "customer": "Benjamin Harris",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-09T09:30:00Z"
+  },
+  {
+    "id": 14,
+    "title": "UI Bug on Dashboard",
+    "description": "Buttons overlap on smaller screen resolutions.",
+    "customer": "Charlotte Clark",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-11-09T10:50:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Two-Factor Authentication Error",
+    "description": "2FA code not being accepted even when correct.",
+    "customer": "Elijah Lewis",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-11-09T11:20:00Z"
+  }
+]
