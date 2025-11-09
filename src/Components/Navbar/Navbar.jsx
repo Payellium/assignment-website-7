@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar max-w-[1440px] mx-auto flex justify-between">
+    <div className="navbar max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between">
         <div>
             <a className="btn btn-ghost text-xl">CS — Ticket System</a>
         </div>
