@@ -23,7 +23,7 @@
     "description": "The dashboard page is stuck on loading screen.",
     "customer": "Michael Brown",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-11-03T08:05:00Z"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Customer did not receive order confirmation email after purchase.",
     "customer": "Noah Anderson",
     "priority": "Low",
-    "status": "Closed",
+    "status": "In Progress",
     "createdAt": "2025-11-07T09:00:00Z"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Invoice shows wrong billing amount for last purchase.",
     "customer": "Isabella Thomas",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-11-08T12:40:00Z"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Customer requested dark mode support for the dashboard.",
     "customer": "James Lee",
     "priority": "Low",
-    "status": "Closed",
+    "status": "In Progress",
     "createdAt": "2025-11-08T15:00:00Z"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Buttons overlap on smaller screen resolutions.",
     "customer": "Charlotte Clark",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-11-09T10:50:00Z"
   },
   {

@@ -1,14 +1,14 @@
 import React, { use } from "react";
 import Ticket from "../Ticket/Ticket";
 
-const Tickets = ({ ticketsPromise }) => {
+const Tickets = ({ ticketsPromise, handleCount }) => {
   const ticketsData = use(ticketsPromise);
   console.log(ticketsData);
   return (
     <div className="flex flex-col md:flex-row max-w-[1440px] mx-auto gap-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {ticketsData.map((ticket) => (
-            <Ticket key={ticket.id} ticket={ticket}></Ticket>
+            <Ticket handleCount={handleCount} key={ticket.id} ticket={ticket}></Ticket>
             ))}
         </div>
         <div>

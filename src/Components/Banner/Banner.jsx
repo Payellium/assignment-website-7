@@ -1,8 +1,12 @@
-import React from 'react';
+
 import leftBg from '../../assets/vector1.png'
 import rightBg from '../../assets/vector2.png'
 
-const Banner = () => {
+
+
+const Banner = ({ count}) => {
+   
+    
     return (
         <div className='flex flex-col md:flex-row gap-5 max-w-[1440px] mx-auto mt-12'>
             <div className='left'>
@@ -13,7 +17,7 @@ const Banner = () => {
                     </div>
                     <div className='absolute top-[100px] left-[300px] block md:items-center'>
                         <h2 className='text-2xl'>In-Progress</h2>
-                        <p className='text-5xl font-bold text-center mt-4'>0</p>
+                        <p className='text-5xl font-bold text-center mt-4'>{count}</p>
                     </div>
                 </div>
                 
