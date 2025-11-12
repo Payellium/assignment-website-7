@@ -4,6 +4,7 @@ import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
 import Tickets from "./Components/Tickets/Tickets";
 import Footer from "./Components/Footer/Footer";
+import { toast, ToastContainer } from 'react-toastify';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   const [count, setCount] = useState(0);
   const handleCount = () =>{
     setCount(count+1);
+    toast("Ticket added to Task Section");
   }
 
   const [resolvedCount, setResolvedCount] = useState(0);
@@ -36,6 +38,7 @@ function App() {
       </Suspense>
 
       <Footer></Footer>
+      <ToastContainer/>
     </>
   );
 }

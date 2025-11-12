@@ -1,5 +1,6 @@
 import React, { use, useState } from "react";
 import Ticket from "../Ticket/Ticket";
+import { toast } from "react-toastify";
 
 const Tickets = ({
   ticketsPromise,
@@ -12,6 +13,8 @@ const Tickets = ({
 
   const [task, setTask] = useState([]);
 
+  const [tickets, setTickets] = useState(ticketsData);
+
   const addTask = (ticket) => {
     setTask([...task, ticket]);
   };
@@ -19,18 +22,22 @@ const Tickets = ({
   const [completed, setCompleted] = useState([]);
 
   const handleComplete = (ticketRemove) => {
-    const newTask = task.filter((ticket) => ticket !== ticketRemove);
+    const newTask = task.filter((ticket) => ticket.id !== ticketRemove.id);
     setTask(newTask);
     setCount(count - 1);
     handleResolvedCount();
     const newCompleted = [...completed, ticketRemove];
     setCompleted(newCompleted);
+    toast.success("Task Completed");
+    
+    const updatedTickets = tickets.filter((ticket) => ticket.id !== ticketRemove.id);
+    setTickets(updatedTickets);
   };
 
   return (
     <div className="flex flex-col md:flex-row max-w-[1440px] mx-auto gap-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {ticketsData.map((ticket) => (
+        {tickets.map((ticket) => (
           <Ticket
             addTask={addTask}
             handleCount={handleCount}
@@ -53,7 +60,9 @@ const Tickets = ({
                 >
                   {ticket.title} <br />{" "}
                   <button
-                    onClick={() => handleComplete(ticket)}
+                    onClick={() => {
+                      handleComplete(ticket);
+                    }}
                     className="bg-[#02A53B] text-white p-4 rounded-lg w-full mt-3"
                   >
                     Complete
@@ -75,7 +84,7 @@ const Tickets = ({
                     className=" border-b border-gray-400 bg-[#E0E7FF] text-xl font-medium p-4 text-black"
                     key={ticket.id}
                   >
-                    {ticket.title} 
+                    {ticket.title}
                   </div>
                 ))}
               </li>
