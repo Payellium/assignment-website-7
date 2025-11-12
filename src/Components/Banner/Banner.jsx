@@ -4,7 +4,7 @@ import rightBg from '../../assets/vector2.png'
 
 
 
-const Banner = ({ count}) => {
+const Banner = ({ count, resolvedCount}) => {
    
     
     return (
@@ -29,7 +29,7 @@ const Banner = ({ count}) => {
                 </div>
                 <div className='absolute top-[100px] left-[300px]'>
                     <h2 className='text-2xl'>Resolved</h2>
-                    <p className='text-5xl font-bold text-center mt-4'>0</p>
+                    <p className='text-5xl font-bold text-center mt-4'>{resolvedCount}</p>
                 </div>
             </div>
         </div>

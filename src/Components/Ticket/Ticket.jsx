@@ -1,10 +1,14 @@
-import React from "react";
+
 import Calender from "../../assets/Calender.png";
 
-const Ticket = ({ ticket, handleCount }) => {
+
+
+const Ticket = ({ ticket, handleCount, addTask }) => {
+
+  
   return (
     <div>
-      <div onClick={handleCount} className="card p-4 border border-gray-200 bg-white text-black">
+      <div onClick={()=>{handleCount(); addTask(ticket)}} className="card p-4 border border-gray-200 bg-white text-black">
         <div className="flex justify-between items-center">
           <h4 className="text-xl font-semibold">{ticket.title}</h4>
           <p

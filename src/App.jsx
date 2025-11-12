@@ -17,22 +17,29 @@ function App() {
   const handleCount = () =>{
     setCount(count+1);
   }
+
+  const [resolvedCount, setResolvedCount] = useState(0);
+  const handleResolvedCount = () =>{
+    setResolvedCount(resolvedCount+1);
+  }
   
   return (
     <>
       <Navbar></Navbar>
-      <Banner count={count} ></Banner>
+      <Banner resolvedCount={resolvedCount} count={count} ></Banner>
 
       <div className="max-w-[1440px] mx-auto">
         <h2>Customer Tickets</h2>
       </div>
       <Suspense fallback="Tickets are loading...">
-        <Tickets handleCount={handleCount} ticketsPromise={ticketsPromise}></Tickets>
+        <Tickets handleResolvedCount={handleResolvedCount} count={count} setCount={setCount} handleCount={handleCount} ticketsPromise={ticketsPromise}></Tickets>
       </Suspense>
 
       <Footer></Footer>
     </>
   );
 }
+
+
 
 export default App;
