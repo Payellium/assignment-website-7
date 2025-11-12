@@ -9,7 +9,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const fetchTickets = async() =>{
-  const res = await fetch("/public/tickets.json");
+  const res = await fetch("/dist/tickets.json");
   return res.json();
 }
 const ticketsPromise = fetchTickets();
